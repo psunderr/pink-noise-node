@@ -32,8 +32,8 @@ function PinkNoiseNode(audioContext) {
   return bufferSource;
 }
 
-PinkNoiseNode.install = function() {
-  Object.defineProperty(AudioContext.prototype, "createPinkNoise", {
+PinkNoiseNode.install = function(audioContext) {
+  Object.defineProperty(audioContext.prototype, "createPinkNoise", {
     value: function() {
       return new PinkNoiseNode(this);
     },
