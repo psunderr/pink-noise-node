@@ -1,4 +1,4 @@
-var noiseData = new Float32Array(44100 * 5);
+var noiseData = new Float32Array(48000 * 5);
 var noiseBuffer = null;
 
 // http://noisehack.com/generate-noise-web-audio-api/
